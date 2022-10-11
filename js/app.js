@@ -53,7 +53,7 @@ function buyButtonClicked(){
   while(cartContent.hasChildNodes()){
     cartContent.removeChild(cartContent.firstChild)
   }
-
+  updateTotal();
 }
 
 function removeCartItem(e){
