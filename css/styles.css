@@ -223,8 +223,15 @@ section {
   width: 100%;
   height: auto;
   margin-bottom: 0.5rem;
+  background-color: var(--bg-color);
+  border-radius: 10px;
 
 }
+
+.product-img:hover{
+  background: rgb(185, 234, 247);
+}
+
 
 .product-title {
   font-size: 1.1rem;
