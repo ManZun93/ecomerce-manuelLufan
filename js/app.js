@@ -103,7 +103,7 @@ function addProductToCart(title, price, productImg){
     
   }
   
-  let cartBoxContent = `
+let cartBoxContent = `
 <img src="${productImg}" alt="" class="cart-img">
   <div class="detail-box">
   <div class="cart-product-title">${title}</div>
@@ -119,14 +119,6 @@ cartShopBox.getElementsByClassName("cart-remove")[0].addEventListener("click", r
 cartShopBox.getElementsByClassName("cart-quantity")[0].addEventListener("change", quantityChanged);
 
 }
-
-
-
-
-
-
-
-
 
 
 //totales
