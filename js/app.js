@@ -43,6 +43,16 @@ for (let i = 0; i < addCart.length; i++) {
   let button = addCart[i]
   button.addEventListener("click", addCartClicked);
 }
+  document.getElementsByClassName("btn-buy")[0].addEventListener("click", buyButtonClicked);
+}
+
+//comprar y remover
+function buyButtonClicked(){
+  alert("Tu compra está lista");
+  let cartContent = document.getElementsByClassName("cart-content")[0]
+  while(cartContent.hasChildNodes()){
+    cartContent.removeChild(cartContent.firstChild)
+  }
 
 }
 
@@ -105,8 +115,12 @@ function addProductToCart(title, price, productImg){
 cartShopBox.innerHTML = cartBoxContent;
 cartItems.append(cartShopBox);
 cartShopBox.getElementsByClassName("cart-remove")[0].addEventListener("click", removeCartItem);
+
 cartShopBox.getElementsByClassName("cart-quantity")[0].addEventListener("change", quantityChanged);
+
 }
+
+
 
 
 
@@ -127,11 +141,11 @@ cartShopBox.getElementsByClassName("cart-quantity")[0].addEventListener("change"
     let price = parseFloat(priceElement.innerText.replace("$", ""))
     let quantity = quantityElement.value;
     total = total + (price * quantity);
-
+  }
   //para centavos
 
   total = Math.round(total *100)/100; 
 
     document.getElementsByClassName("total-price")[0].innerText = "$" + total;
-  }
+  
  }
