@@ -43,6 +43,14 @@ header {
   width: 100%;
 }
 
+@media (max-width:1080px){
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -51,6 +59,14 @@ header {
   padding: 20px 0;
 
 }
+
+@media (max-width:1080px){
+  .nav {
+    padding: 15px;
+  }
+
+}
+
 
 .logo {
   font-size: 1.1rem;
@@ -194,6 +210,12 @@ section {
 
 }
 
+@media (max-width:1080px){
+  .section {
+    padding: 3rem 0 2rem;
+  }
+  
+}
 .shop {
   margin-top: 7rem;
   
@@ -264,9 +286,7 @@ section {
   padding: 5rem 0;
   display: grid;
   grid-template-columns:repeat(3,1fr);
-  background: var(--bg-color);
-  
-  
+  background: var(--bg-color); 
   
 } 
 
@@ -308,3 +328,4 @@ section {
 .footer-link:hover{
   color: #fd4646;
 }
+
